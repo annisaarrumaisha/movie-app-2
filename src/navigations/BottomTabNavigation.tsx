@@ -7,8 +7,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 // Mengimpor Feather dari @expo/vector-icons untuk menggunakan ikon dari Feather
 import { Feather } from '@expo/vector-icons'
 
-// Mengimpor komponen layar yang akan digunakan dalam navigasi tab
-import Home from '../screens/Home'
+// Mengimpor komponen HomeStackNavigation yang baru dibuat dan komponen layar lainnya
+import HomeStackNavigation from './HomeStackNavigation'
 import Search from '../screens/Search'
 import Favorite from '../screens/Favorite'
 
@@ -22,7 +22,7 @@ const BottomTabNavigator = (): JSX.Element => (
     {/* Mendefinisikan tab untuk layar Home */}
     <Tab.Screen
       name="Home" // Menentukan nama tab sebagai "Home"
-      component={Home} // Menentukan komponen yang akan dirender untuk tab ini
+      component={HomeStackNavigation} // Mengganti komponen Home dengan HomeStackNavigation
       options={{
         // Mengatur ikon untuk tab ini menggunakan ikon Feather
         tabBarIcon: ({ color }) => (
