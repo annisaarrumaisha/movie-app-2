@@ -1,6 +1,12 @@
 {
+  // Menggunakan pengaturan dasar TypeScript dari Expo
   "extends": "expo/tsconfig.base",
+  
+  // Mengatur opsi compiler TypeScript
   "compilerOptions": {
-    "strict": true
+    // Mengaktifkan mode ketat untuk memastikan kode TypeScript lebih aman dan terkontrol
+    "strict": true,
+    // Menentukan direktori tambahan untuk pencarian tipe (type roots)
+    "typeRoots": ["./src/types"] // Ditambahkan
   }
 }
