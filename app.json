@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "movie-app-1",
-    "slug": "movie-app-1",
+    "name": "movie-app",
+    "slug": "movie-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
